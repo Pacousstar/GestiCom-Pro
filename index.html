@@ -73,11 +73,20 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
 .screenshot-card img{width:100%;height:240px;object-fit:cover;display:block;background:linear-gradient(135deg,#1f2937,#374151)}
 .screenshot-card .caption{padding:16px 20px;font-weight:600;font-size:15px;color:#1f2937;border-top:1px solid #f3f4f6;background:#fff}
 
-.download{background:linear-gradient(135deg,#1a0a00,#2d1408,#1f2937);color:#fff;text-align:center;padding:120px 24px;position:relative;overflow:hidden}
+.download{background:linear-gradient(135deg,#1a0a00,#2d1408,#1f2937);color:#fff;padding:100px 24px;position:relative;overflow:hidden}
 .download::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF6B35' fill-opacity='.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
-.download h2{font-size:44px;font-weight:800;margin-bottom:16px;position:relative}
-.download h2 span{background:linear-gradient(135deg,#FF6B35,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.download p{font-size:18px;opacity:.8;margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto;position:relative}
+.download-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:60px;position:relative}
+.download-preview{flex:1;text-align:center;padding:40px 32px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:20px;backdrop-filter:blur(8px)}
+.download-logo{width:100px;height:100px;border-radius:20px;margin-bottom:16px;display:inline-block}
+.download-preview h3{font-size:22px;font-weight:700;margin-bottom:20px}
+.download-preview h3 span{color:#fbbf24}
+.download-preview-list{display:flex;flex-direction:column;gap:10px;align-items:center}
+.download-preview-list span{display:flex;align-items:center;gap:8px;font-size:14px;opacity:.8;color:#d1d5db}
+.download-preview-list span svg{color:#22c55e;flex-shrink:0}
+.download-cta{flex:1;text-align:center}
+.download-cta h2{font-size:38px;font-weight:800;margin-bottom:16px;position:relative}
+.download-cta h2 span{background:linear-gradient(135deg,#FF6B35,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.download-cta p{font-size:17px;opacity:.8;margin-bottom:32px;max-width:400px;margin-left:auto;margin-right:auto}
 .download .btn-download-lg{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(135deg,#FF6B35,#E5561E);color:#fff;padding:18px 44px;border-radius:12px;text-decoration:none;font-weight:700;font-size:18px;transition:all .3s;position:relative;box-shadow:0 8px 30px rgba(255,107,53,.35)}
 .download .btn-download-lg:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(255,107,53,.5)}
 .download .btn-download-lg svg{filter:drop-shadow(0 2px 4px rgba(0,0,0,.2))}
@@ -87,9 +96,9 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
 .contact-wrap{display:flex;gap:40px;align-items:stretch}
 .contact-image{flex:1;position:relative;border-radius:20px;overflow:hidden;min-height:500px;box-shadow:0 8px 40px rgba(0,0,0,.1);border:1px solid #f3f4f6}
 .contact-image img{width:100%;height:100%;object-fit:cover;display:block}
-.contact-image-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.7),transparent);padding:40px;color:#fff}
-.contact-image-overlay h2{font-size:28px;font-weight:800;margin-bottom:8px}
-.contact-image-overlay p{font-size:15px;opacity:.9;margin-bottom:20px;max-width:400px}
+.contact-image-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.7),transparent);padding:40px;color:#22c55e}
+.contact-image-overlay h2{font-size:28px;font-weight:800;margin-bottom:8px;color:#22c55e}
+.contact-image-overlay p{font-size:15px;opacity:.9;margin-bottom:20px;max-width:400px;color:#22c55e}
 .contact-info-lines{display:flex;flex-direction:column;gap:10px}
 .contact-info-lines span{display:flex;align-items:center;gap:10px;font-size:14px;opacity:.9}
 .contact-form{width:420px;min-width:360px;padding:8px 0;display:flex;flex-direction:column;justify-content:center}
@@ -123,7 +132,8 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
   .section{padding:60px 16px}
   .hero-carousel{height:220px}
   .section-title h2{font-size:28px}
-  .download h2{font-size:28px}
+  .download-inner{flex-direction:column;gap:32px}
+  .download-cta h2{font-size:26px}
   .download .btn-download-lg{padding:16px 28px;font-size:16px}
   .contact-wrap{flex-direction:column}
   .contact-form{width:100%;min-width:auto}
@@ -266,13 +276,28 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
 </section>
 
 <section class="download" id="download">
-  <h2>Prêt à simplifier votre <span>gestion ?</span></h2>
-  <p>Téléchargez la dernière version de GestiCom Pro et commencez dès maintenant.</p>
-  <a href="https://drive.google.com/file/d/1tSLJggXSBVYAa7ZB2_-ie7-aVXiGbR1S/view?usp=drive_link" class="btn-download-lg" target="_blank" rel="noopener">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-    Télécharger GestiCom Pro
-  </a>
-  <div class="version-info">Dernière version : v3.46.9 — Windows 10/11</div>
+  <div class="download-inner">
+    <div class="download-preview">
+      <img src="images/logo.png" alt="GestiCom Pro" class="download-logo">
+      <h3>GestiCom Pro <span>v3.46.9</span></h3>
+      <div class="download-preview-list">
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Ventes & Achats</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Stocks & Inventaire</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Comptabilité & Caisse</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Clients & Fournisseurs</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Multi-postes (SQLite/Serveur)</span>
+      </div>
+    </div>
+    <div class="download-cta">
+      <h2>Prêt à simplifier votre <span>gestion ?</span></h2>
+      <p>Téléchargez la dernière version et commencez dès maintenant.</p>
+      <a href="https://drive.google.com/uc?export=download&id=1tSLJggXSBVYAa7ZB2_-ie7-aVXiGbR1S" class="btn-download-lg" target="_blank" rel="noopener">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Télécharger (700 Mo)
+      </a>
+      <div class="version-info">Windows 10/11 · Installation simple · Essai gratuit</div>
+    </div>
+  </div>
 </section>
 
 <section class="section contact" id="contact">
