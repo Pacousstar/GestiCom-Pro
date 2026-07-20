@@ -74,6 +74,23 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
 .screenshot-card img{width:100%;height:240px;object-fit:cover;display:block;background:linear-gradient(135deg,#1f2937,#374151)}
 .screenshot-card .caption{padding:16px 20px;font-weight:600;font-size:15px;color:#1f2937;border-top:1px solid #f3f4f6;background:#fff}
 
+.preinscription{background:#0f172a;color:#fff;padding:80px 24px;border-top:1px solid rgba(255,255,255,.06)}
+.preinscription-inner{max-width:700px;margin:0 auto;text-align:center}
+.preinscription h2{font-size:32px;font-weight:800;margin-bottom:8px}
+.preinscription h2 span{background:linear-gradient(135deg,#FF6B35,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.preinscription p{color:#94a3b8;margin-bottom:32px;font-size:16px}
+.preinscription .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.preinscription .form-group{margin-bottom:0}
+.preinscription label{display:block;font-size:13px;font-weight:600;color:#cbd5e1;margin-bottom:6px;text-align:left}
+.preinscription input,.preinscription select{width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:11px 14px;font-size:14px;outline:none;transition:all .2s;color:#fff;font-family:inherit}
+.preinscription select option{background:#1e293b;color:#fff}
+.preinscription input:focus,.preinscription select:focus{border-color:#FF6B35;box-shadow:0 0 0 3px rgba(255,107,53,.15)}
+.preinscription input::placeholder{color:#64748b}
+.preinscription .btn-submit-full{width:100%;background:linear-gradient(135deg,#FF6B35,#E5561E);color:#fff;padding:14px;border-radius:10px;border:none;font-weight:700;font-size:16px;cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(255,107,53,.35);margin-top:8px}
+.preinscription .btn-submit-full:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(255,107,53,.45)}
+.preinscription .btn-submit-full:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.preinscription .form-success{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:20px;padding:16px 20px;background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.3);border-radius:12px;color:#34d399;font-size:15px;font-weight:500}
+
 .download{background:linear-gradient(135deg,#1a0a00,#2d1408,#1f2937);color:#fff;padding:100px 24px;position:relative;overflow:hidden}
 .download::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF6B35' fill-opacity='.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
 .download-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:60px;position:relative}
@@ -159,8 +176,8 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
   <nav>
     <a href="#features">Fonctionnalités</a>
     <a href="#screenshots">Aperçu</a>
+    <a href="#preinscription" class="btn-download">Télécharger</a>
     <a href="#contact">Contact</a>
-    <a href="#download" class="btn-download">Télécharger</a>
   </nav>
 </header>
 
@@ -278,6 +295,62 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
   </div>
 </section>
 
+<section class="preinscription" id="preinscription">
+  <div class="preinscription-inner">
+    <h2>Prêt à passer à <span>GestiCom Pro ?</span></h2>
+    <p>Laissez-nous vos coordonnées pour recevoir votre lien de téléchargement et un accompagnement personnalisé.</p>
+    <form id="preinscriptionForm">
+      <input type="hidden" name="source" value="preinscription">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="preinsNom">Nom complet *</label>
+          <input type="text" id="preinsNom" name="nom" required placeholder="Votre nom">
+        </div>
+        <div class="form-group">
+          <label for="preinsEmail">Email *</label>
+          <input type="email" id="preinsEmail" name="email" required placeholder="vous@exemple.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="preinsTel">Contact</label>
+          <input type="tel" id="preinsTel" name="contact" placeholder="+225 XX XX XX XX">
+        </div>
+        <div class="form-group">
+          <label for="preinsDomaine">Domaine d'activité *</label>
+          <select id="preinsDomaine" name="domaine" required>
+            <option value="">Sélectionnez votre domaine...</option>
+            <option value="Boutique de vêtements">🛍️ Boutique de vêtements et prêt-à-porter</option>
+            <option value="Supermarché">🛒 Supermarché / Supérette / Alimentation générale</option>
+            <option value="Quincaillerie">🧱 Quincaillerie et matériaux de construction</option>
+            <option value="Pharmacie">💊 Pharmacie et parapharmacie</option>
+            <option value="Téléphonie">📱 Téléphonie mobile et accessoires</option>
+            <option value="Cosmétiques">💄 Cosmétiques, parfumerie et produits de beauté</option>
+            <option value="Chaussures">👟 Magasin de chaussures et maroquinerie</option>
+            <option value="Restauration">🍽️ Restaurant, maquis, fast-food et cafétéria</option>
+            <option value="Boissons">🥤 Cave, boissons et distribution de boissons</option>
+            <option value="Informatique">🖥️ Informatique, électronique et électroménager</option>
+            <option value="Pièces auto">🚗 Pièces détachées automobiles et motos</option>
+            <option value="Agroalimentaire">🌾 Agroalimentaire et produits agricoles</option>
+            <option value="Élevage">🐓 Élevage, alimentation animale et produits vétérinaires</option>
+            <option value="Bijouterie">💎 Bijouterie, horlogerie et accessoires de mode</option>
+            <option value="Papeterie">🏪 Papeterie, librairie et fournitures de bureau</option>
+            <option value="Autre">Autre (à préciser)</option>
+          </select>
+          <input type="text" id="preinsDomaineAutre" name="domaine_autre" placeholder="Précisez votre domaine..." style="display:none;margin-top:8px">
+        </div>
+      </div>
+      <button type="submit" class="btn-submit-full" id="preinsBtn">
+        Obtenir mon lien de téléchargement
+      </button>
+      <div id="preinsSuccess" class="form-success" style="display:none">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Inscription réussie ! Rendez-vous dans la section téléchargement ci-dessous.
+      </div>
+    </form>
+  </div>
+</section>
+
 <section class="download" id="download">
   <div class="download-inner">
     <div class="download-preview">
@@ -315,6 +388,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
     <div class="contact-form">
       <h3>Envoyez-nous un message</h3>
       <form id="contactForm" action="https://formspree.io/f/mjgnrgby" method="POST">
+        <input type="hidden" name="source" value="contact">
         <div class="form-row">
           <div class="form-group">
             <label for="contactNom">Nom complet *</label>
@@ -323,6 +397,35 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
           <div class="form-group">
             <label for="contactEmail">Email *</label>
             <input type="email" id="contactEmail" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contactTel">Contact</label>
+            <input type="tel" id="contactTel" name="contact" placeholder="+225 XX XX XX XX">
+          </div>
+          <div class="form-group">
+            <label for="contactDomaine">Domaine d'activité</label>
+            <select id="contactDomaine" name="domaine">
+              <option value="">Sélectionnez...</option>
+              <option value="Boutique de vêtements">🛍️ Boutique de vêtements et prêt-à-porter</option>
+              <option value="Supermarché">🛒 Supermarché / Supérette / Alimentation générale</option>
+              <option value="Quincaillerie">🧱 Quincaillerie et matériaux de construction</option>
+              <option value="Pharmacie">💊 Pharmacie et parapharmacie</option>
+              <option value="Téléphonie">📱 Téléphonie mobile et accessoires</option>
+              <option value="Cosmétiques">💄 Cosmétiques, parfumerie et produits de beauté</option>
+              <option value="Chaussures">👟 Magasin de chaussures et maroquinerie</option>
+              <option value="Restauration">🍽️ Restaurant, maquis, fast-food et cafétéria</option>
+              <option value="Boissons">🥤 Cave, boissons et distribution de boissons</option>
+              <option value="Informatique">🖥️ Informatique, électronique et électroménager</option>
+              <option value="Pièces auto">🚗 Pièces détachées automobiles et motos</option>
+              <option value="Agroalimentaire">🌾 Agroalimentaire et produits agricoles</option>
+              <option value="Élevage">🐓 Élevage, alimentation animale et produits vétérinaires</option>
+              <option value="Bijouterie">💎 Bijouterie, horlogerie et accessoires de mode</option>
+              <option value="Papeterie">🏪 Papeterie, librairie et fournitures de bureau</option>
+              <option value="Autre">Autre (à préciser)</option>
+            </select>
+            <input type="text" id="contactDomaineAutre" name="domaine_autre" placeholder="Précisez votre domaine..." style="display:none;margin-top:8px">
           </div>
         </div>
         <div class="form-group">
@@ -362,7 +465,12 @@ Une question, un besoin, un partenariat ? Notre équipe est à votre écoute."><
 <script>
 (function(){var c=document.getElementById('heroCarousel'),s=c.querySelector('.slides'),d=c.querySelectorAll('.dots span'),a=document.getElementById('heroCaption'),i=0,t,p=['La solution complète pour la gestion de votre commerce. Ventes, stocks, comptabilité, tout-en-un.','Simplifiez la gestion de votre boutique : stocks par taille/couleur, ventes au comptoir et fidélité client.','Gérez rayons, fournisseurs et caisses en un clin d\'œil. Une solution taillée pour la distribution.','Tous les commerces méritent une gestion professionnelle. GestiCom Pro s\'adapte à votre activité.','Quel que soit votre secteur, pilotez votre entreprise avec des outils performants et simples.','De la production à la vente, suivez matières premières, commandes et recettes en temps réel.','Une solution flexible pour tous types d\'entreprises. GestiCom Pro grandit avec vous.'];function go(n){i=(n+d.length)%d.length;s.style.transform='translateX('+(-i*100)+'%)';a.style.opacity='0';setTimeout(function(){a.textContent=p[i];a.style.opacity='1'},200);for(var j=0;j<d.length;j++)d[j].classList.toggle('active',j===i)}function next(){go(i+1)}for(var j=0;j<d.length;j++)(function(j){d[j].onclick=function(){go(j);clearInterval(t);t=setInterval(next,4000)}})(j);t=setInterval(next,4000)})();
 
-(function(){var f=document.getElementById('contactForm'),s=document.getElementById('contactSuccess'),b=f.querySelector('.btn-submit');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();b.disabled=true;b.innerHTML='<svg class="spin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" stroke-dasharray="80" stroke-dashoffset="60"/></svg> Envoi...';fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(function(r){return r.json().catch(function(){return{}}) }).then(function(d){if(d.error||d.errors)throw new Error(d.error||(d.errors&&d.errors[0]&&d.errors[0].message)||'Erreur inconnue');f.reset();s.style.display='flex';setTimeout(function(){s.style.display='none'},6000)}).catch(function(err){alert('Erreur : '+err.message)}).finally(function(){b.disabled=false;b.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Envoyer le message'})})})();
+(function(){function setupAutre(selId,autreId){var s=document.getElementById(selId),a=document.getElementById(autreId);if(!s||!a)return;s.addEventListener('change',function(){a.style.display=s.value==='Autre'?'block':'none';if(s.value!=='Autre')a.value=''});a.addEventListener('input',function(){var o=Array.from(s.options).find(function(x){return x.value==='Autre'});if(o)o.value=a.value})}
+setupAutre('contactDomaine','contactDomaineAutre');setupAutre('preinsDomaine','preinsDomaineAutre');
+function handleForm(fid,btnSel,succId,btnHtml){var f=document.getElementById(fid),s=document.getElementById(succId),b=f.querySelector(btnSel);if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();b.disabled=true;b.innerHTML='<svg class="spin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" stroke-dasharray="80" stroke-dashoffset="60"/></svg> Envoi...';fetch(f.action||'https://formspree.io/f/mjgnrgby',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(function(r){return r.json().catch(function(){return{}})}).then(function(d){if(d.error||d.errors)throw new Error(d.error||(d.errors&&d.errors[0]&&d.errors[0].message)||'Erreur inconnue');f.reset();s.style.display='flex';setTimeout(function(){s.style.display='none'},6000)}).catch(function(err){alert('Erreur : '+err.message)}).finally(function(){b.disabled=false;b.innerHTML=btnHtml})})}
+handleForm('contactForm','.btn-submit','contactSuccess','<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Envoyer le message');
+handleForm('preinscriptionForm','.btn-submit-full','preinsSuccess','Obtenir mon lien de téléchargement');
+})();
 </script>
 
 </body>
