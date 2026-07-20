@@ -37,6 +37,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
 .hero-carousel{width:100%;max-width:500px;height:320px;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.1)}
 .hero-carousel .slides{display:flex;transition:transform .6s cubic-bezier(.4,0,.2,1);height:100%}
 .hero-carousel .slides img{width:100%;height:100%;object-fit:cover;flex-shrink:0;background:#1f2937}
+.hero-caption{position:absolute;bottom:40px;left:0;right:0;text-align:center;padding:12px 20px;background:linear-gradient(to top,rgba(0,0,0,.8),transparent);color:#fbbf24;font-size:14px;font-weight:600;transition:opacity .4s;pointer-events:none;line-height:1.5}
 .hero-carousel .dots{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
 .hero-carousel .dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.4);cursor:pointer;transition:all .3s}
 .hero-carousel .dots span.active{background:#FF6B35;width:24px;border-radius:4px}
@@ -191,6 +192,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
         <img src="images/hero/OIG1%20(4).jpg" alt="GestiCom Pro" loading="lazy">
         <img src="images/hero/OIG2.jpg" alt="GestiCom Pro" loading="lazy">
       </div>
+      <div class="hero-caption" id="heroCaption">GestiCom Pro — La solution complète pour la gestion de votre commerce</div>
       <div class="dots">
         <span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
@@ -356,7 +358,7 @@ Une question, un besoin, un partenariat ? Notre équipe est à votre écoute."><
 </footer>
 
 <script>
-(function(){var c=document.getElementById('heroCarousel'),s=c.querySelector('.slides'),d=c.querySelectorAll('.dots span'),i=0,t;function go(n){i=(n+d.length)%d.length;s.style.transform='translateX('+(-i*100)+'%)';for(var j=0;j<d.length;j++)d[j].classList.toggle('active',j===i)}function next(){go(i+1)}for(var j=0;j<d.length;j++)(function(j){d[j].onclick=function(){go(j);clearInterval(t);t=setInterval(next,3500)}})(j);t=setInterval(next,3500)})();
+(function(){var c=document.getElementById('heroCarousel'),s=c.querySelector('.slides'),d=c.querySelectorAll('.dots span'),a=document.getElementById('heroCaption'),i=0,t,p=['GestiCom Pro — La solution complète pour la gestion de votre commerce. Ventes, stocks, comptabilité, tout-en-un.','Mode & Vêtements — Simplifiez la gestion de votre boutique : stocks par taille/couleur, ventes au comptoir et fidélité client.','Supermarché — Gérez rayons, fournisseurs et caisses en un clin d\'œil. Une solution taillée pour la distribution.','Commerce Général — Tous les commerces méritent une gestion professionnelle. GestiCom Pro s\'adapte à votre activité.','Toutes Activités — Quel que soit votre secteur, pilotez votre entreprise avec des outils performants et simples.','Boulangerie — De la production à la vente, suivez matières premières, commandes et recettes en temps réel.','Divers Entreprises — Une solution flexible pour tous types d\'entreprises. GestiCom Pro grandit avec vous.'];function go(n){i=(n+d.length)%d.length;s.style.transform='translateX('+(-i*100)+'%)';a.style.opacity='0';setTimeout(function(){a.textContent=p[i];a.style.opacity='1'},200);for(var j=0;j<d.length;j++)d[j].classList.toggle('active',j===i)}function next(){go(i+1)}for(var j=0;j<d.length;j++)(function(j){d[j].onclick=function(){go(j);clearInterval(t);t=setInterval(next,4000)}})(j);t=setInterval(next,4000)})();
 
 (function(){var f=document.getElementById('contactForm'),s=document.getElementById('contactSuccess'),b=f.querySelector('.btn-submit');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();b.disabled=true;b.innerHTML='<svg class="spin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" stroke-dasharray="80" stroke-dashoffset="60"/></svg> Envoi...';fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(function(r){return r.json().catch(function(){return{}}) }).then(function(d){if(d.error||d.errors)throw new Error(d.error||(d.errors&&d.errors[0]&&d.errors[0].message)||'Erreur inconnue');f.reset();s.style.display='flex';setTimeout(function(){s.style.display='none'},6000)}).catch(function(err){alert('Erreur : '+err.message)}).finally(function(){b.disabled=false;b.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Envoyer le message'})})})();
 </script>
