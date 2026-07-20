@@ -96,7 +96,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
 .footer .footer-logo{height:28px;margin-bottom:16px;opacity:.7}
 
 @media(max-width:768px){
-  .header nav a:not(.btn-download){display:none}
+  .header nav a:not(.btn-download):not([href*="contact"]){display:none}
   .hero-content{grid-template-columns:1fr;text-align:center;gap:40px}
   .hero-text h1{font-size:32px}
   .hero-text p{margin-left:auto;margin-right:auto}
@@ -129,6 +129,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
   <nav>
     <a href="#features">Fonctionnalités</a>
     <a href="#screenshots">Aperçu</a>
+    <a href="/contact">Contact</a>
     <a href="#download" class="btn-download">Télécharger</a>
   </nav>
 </header>
@@ -258,8 +259,8 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
   <div class="section-inner">
     <h2>Une question ?</h2>
     <p>Contactez GSN EXPERTISES GROUP pour un accompagnement personnalisé.</p>
-    <a href="https://www.gsnexpertises.com" class="btn-white" target="_blank" rel="noopener">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    <a href="/contact" class="btn-white">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
       Nous contacter
     </a>
   </div>
