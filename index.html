@@ -53,14 +53,19 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
 .section-title p{color:#6b7280;font-size:17px;max-width:600px;margin:0 auto}
 .section-inner{max-width:1100px;margin:0 auto}
 
-.features{background:linear-gradient(180deg,#e5e7eb,#f9fafb,#dcfce7)}
+.features{background:#0F172A}
 .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
-.feature-card{background:#FF6B35;border:3px solid rgba(255,255,255,.2);border-radius:16px;padding:32px 24px;text-align:center;transition:all .3s;color:#fff}
-.feature-card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(255,107,53,.3);border-color:#fff;background:#E5561E}
-.feature-card h3{color:#fff}.feature-card p{color:rgba(255,255,255,.85)}
-.feature-card .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:26px;color:#FF6B35;background:rgba(255,255,255,.95)}
+.feature-card{border:2px solid;border-radius:16px;padding:32px 24px;text-align:center;transition:all .3s;color:#fff}
+.feature-card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(0,0,0,.4)}
 .feature-card h3{font-size:17px;font-weight:700;margin-bottom:8px}
-.feature-card p{font-size:14px;line-height:1.6}
+.feature-card p{font-size:14px;line-height:1.6;opacity:.9}
+.feature-card .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;background:rgba(255,255,255,.12)}
+.card-ventes{border-color:#3B82F6;background:#1E293B}.card-ventes .icon{color:#3B82F6;background:rgba(59,130,246,.15)}.card-ventes:hover{border-color:#60A5FA;box-shadow:0 8px 32px rgba(59,130,246,.2)}
+.card-stocks{border-color:#F97316;background:#2C1A14}.card-stocks .icon{color:#F97316;background:rgba(249,115,22,.15)}.card-stocks:hover{border-color:#FB923C;box-shadow:0 8px 32px rgba(249,115,22,.2)}
+.card-compta{border-color:#8B5CF6;background:#211A2C}.card-compta .icon{color:#8B5CF6;background:rgba(139,92,246,.15)}.card-compta:hover{border-color:#A78BFA;box-shadow:0 8px 32px rgba(139,92,246,.2)}
+.card-caisse{border-color:#10B981;background:#142820}.card-caisse .icon{color:#10B981;background:rgba(16,185,129,.15)}.card-caisse:hover{border-color:#34D399;box-shadow:0 8px 32px rgba(16,185,129,.2)}
+.card-clients{border-color:#0EA5E9;background:#152A38}.card-clients .icon{color:#0EA5E9;background:rgba(14,165,233,.15)}.card-clients:hover{border-color:#38BDF8;box-shadow:0 8px 32px rgba(14,165,233,.2)}
+.card-multi{border-color:#64748B;background:#0F172A}.card-multi .icon{color:#64748B;background:rgba(100,116,139,.15)}.card-multi:hover{border-color:#94A3B8;box-shadow:0 8px 32px rgba(100,116,139,.2)}
 
 .screenshots{background:linear-gradient(180deg,#e5e7eb,#f9fafb,#e5e7eb)}
 .screenshots-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
@@ -204,33 +209,33 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
       <p>Une solution complète conçue pour les commerces de proximité, grossistes et entreprises.</p>
     </div>
     <div class="features-grid">
-      <div class="feature-card">
-        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+      <div class="feature-card card-ventes">
+        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
         <h3>Ventes & Achats</h3>
         <p>Facturation, bons de commande, devis, gestion des retours et des règlements clients/fournisseurs.</p>
       </div>
-      <div class="feature-card">
-        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+      <div class="feature-card card-stocks">
+        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
         <h3>Stocks & Inventaire</h3>
         <p>Suivi multi-magasins, alertes de rupture, inventaire, valorisation et ajustements.</p>
       </div>
-      <div class="feature-card">
-        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <div class="feature-card card-compta">
+        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/></svg></div>
         <h3>Comptabilité</h3>
         <p>Compte de résultat, bilan, journal comptable, suivi des créances et dettes fournisseurs.</p>
       </div>
-      <div class="feature-card">
-        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+      <div class="feature-card card-caisse">
+        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/></svg></div>
         <h3>Caisse & Banque</h3>
         <p>Opérations bancaires, rapprochement, suivi des comptes et gestion de caisse au quotidien.</p>
       </div>
-      <div class="feature-card">
+      <div class="feature-card card-clients">
         <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>Clients & Fournisseurs</h3>
         <p>Fiches complètes, historiques d'achats/ventes, comptes courants et échéanciers.</p>
       </div>
-      <div class="feature-card">
-        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <div class="feature-card card-multi">
+        <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
         <h3>Multi-postes</h3>
         <p>Mode serveur PostgreSQL : plusieurs postes de travail, même base de données en temps réel.</p>
       </div>
