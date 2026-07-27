@@ -119,12 +119,12 @@ h1 span{color:#FF6B35}
     .then(function(r){ return r.json() })
     .then(function(d){
       var count = (d.assets||[]).reduce(function(a,as){ return a + as.download_count }, 0);
-      var pos = count + 1;
-      var label = pos === 1 ? '1er' : pos + 'e';
+      var pos = 100 + count + 1;
+      var label = pos + 'e';
       document.getElementById('positionText').textContent = 'Vous êtes le ' + label + ' téléchargeur !';
     })
     .catch(function(){
-      document.getElementById('positionText').textContent = 'Vous êtes le 1er téléchargeur !';
+      document.getElementById('positionText').textContent = 'Vous êtes le 101e téléchargeur !';
     });
 })();
 </script>
