@@ -1,8 +1,8 @@
 {
-    "version":  "3.52.18",
+    "version":  "3.52.19",
     "downloadUrl":  "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom-Pro-Setup.exe",
-    "checksum":  "2114706A98AA429D7AF1CF78FA4E2703A56C93D53A21CB638A52D3886072AF77",
-    "changelog":  "Ajout du menu contextuel (clic droit) : Couper, Copier, Coller, Tout selectionner. Correctifs de stabilite et de build.",
-    "releaseDate":  "2026-08-17",
+    "checksum":  "57DC12DE85655CF1DC515A86BF0C227227A2C1DDCD4E1D0B63A65E6EC37E0200",
+    "changelog":  "Scanner code-barres : autorisation caméra automatique dès l'ouverture du scanner, messages d'erreur précis (Windows / caméra occupée / aucune caméra), bouton Réessayer et accès direct aux paramètres caméra Windows. Correction du reste à payer dans les ventes (les retours sont désormais déduits des totaux). Retours sur commande et retrait partiel limités à la quantité réellement livrée.",
+    "releaseDate":  "2026-08-18",
     "required":  false
 }
