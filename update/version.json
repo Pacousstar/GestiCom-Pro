@@ -1,8 +1,8 @@
 {
-    "version":  "3.52.9",
+    "version":  "3.52.18",
     "downloadUrl":  "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom-Pro-Setup.exe",
-    "checksum":  "03DE8955474A8D1D7CFA9742833B9BAF11E0E8EBBCE82014D5E573409CED0195",
-    "changelog":  "Correctif exports et imports Excel : erreur 500 sur tous les exports (Produits, Stock, Caisse, Clients, Fournisseurs, Comptabilite...) - les chunks serveur manquants sont desormais inclus dans le build. Correctifs de stabilite (recherche, validation, coherence stock).",
-    "releaseDate":  "2026-08-14",
+    "checksum":  "2114706A98AA429D7AF1CF78FA4E2703A56C93D53A21CB638A52D3886072AF77",
+    "changelog":  "Ajout du menu contextuel (clic droit) : Couper, Copier, Coller, Tout selectionner. Correctifs de stabilite et de build.",
+    "releaseDate":  "2026-08-17",
     "required":  false
 }
