@@ -1,8 +1,8 @@
 {
-    "version":  "3.52.19",
-    "downloadUrl":  "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom-Pro-Setup.exe",
-    "checksum":  "57DC12DE85655CF1DC515A86BF0C227227A2C1DDCD4E1D0B63A65E6EC37E0200",
-    "changelog":  "Scanner code-barres : autorisation caméra automatique dès l'ouverture du scanner, messages d'erreur précis (Windows / caméra occupée / aucune caméra), bouton Réessayer et accès direct aux paramètres caméra Windows. Correction du reste à payer dans les ventes (les retours sont désormais déduits des totaux). Retours sur commande et retrait partiel limités à la quantité réellement livrée.",
-    "releaseDate":  "2026-08-18",
-    "required":  false
+  "version": "3.52.20",
+  "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom-Pro-Setup.exe",
+  "checksum": "602434D461F6EB9F4F7509035FE128D3F3B723E602491A219BC4F47EF5B1F68E",
+  "changelog": "Correction du crash au démarrage de l'application (erreur « Session can only be received when app is ready » empêchant l'ouverture de la version 3.52.19) : GestiCom Pro se lance de nouveau normalement. Build d'installation plus fiable (nettoyage automatique du dossier de build, compilation sans avertissements).",
+  "releaseDate": "2026-08-20",
+  "required": false
 }
