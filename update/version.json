@@ -1,8 +1,8 @@
 {
-  "version": "3.53.0",
+  "version": "3.53.1",
   "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom-Pro-Setup.exe",
-  "checksum": "A6E70B53E26612F81327838695BE3454EC798D7185D5E1E1E7BA503CDB7C2445",
-  "changelog": "Correction d'un plantage intermittent lors du build d'installation (Turbopack Windows). Correction du bandeau « Essai gratuit — 7 jours restants » restant affiché après activation d'une licence. Build plus fiable : nettoyage automatique du dossier release, compilation sans avertissements.",
-  "releaseDate": "2026-08-20",
+  "checksum": "72D551F6F50C0283BE5EFABECFD28BFCAAC89A16AFFF3DAAD9AF387C94D1F850",
+  "changelog": "Correction critique des soldes clients et fournisseurs (retraits de compte courant comptés à l'envers). Mutualisation des calculs de soldes dans de nouvelles librairies partagées. Statuts de validation unifiés sur toutes les routes API. Alerte 7 jours avant expiration de licence. Correction de la variation de période (retours période au lieu de globaux). Correction du solde global fournisseurs et de la compensation des comptes courants.",
+  "releaseDate": "2026-08-22",
   "required": false
 }
