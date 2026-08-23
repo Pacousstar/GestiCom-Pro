@@ -1,8 +1,8 @@
 {
-  "version": "3.53.1",
-  "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom-Pro-Setup.exe",
-  "checksum": "72D551F6F50C0283BE5EFABECFD28BFCAAC89A16AFFF3DAAD9AF387C94D1F850",
-  "changelog": "Correction critique des soldes clients et fournisseurs (retraits de compte courant comptés à l'envers). Mutualisation des calculs de soldes dans de nouvelles librairies partagées. Statuts de validation unifiés sur toutes les routes API. Alerte 7 jours avant expiration de licence. Correction de la variation de période (retours période au lieu de globaux). Correction du solde global fournisseurs et de la compensation des comptes courants.",
-  "releaseDate": "2026-08-22",
+  "version": "3.53.3",
+  "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom.Pro-Setup.exe",
+  "checksum": "3DE9A564C8A0DDD653CC056E995370AA4676C947DC291A347163CA2AC6D41F8E",
+  "changelog": "Audit complet comptes courants : nettoyage écritures CC_CLIENT/CC_FOURNISSEUR orphelines lors de suppression de règlement. Re-comptabilisation depuis le journal comptable corrigée (VENTE_REGLEMENT/ACHAT_REGLEMENT/CC_CLIENT/CC_FOURNISSEUR). Normalisation du préfixe 'Retrait CC' en constante partagée RETRAIT_CC_PREFIX. Filtre CREDIT exclu des totaux de paiements clients et fournisseurs. Contrôle solde caisse/banque ajouté pour les règlements fournisseurs.",
+  "releaseDate": "2026-08-23",
   "required": false
 }
