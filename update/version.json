@@ -1,8 +1,8 @@
 {
-  "version": "3.54.1",
+  "version": "3.54.7",
   "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom.Pro-Setup.exe",
-  "checksum": "727AD56A14578A6F6446082FEFE5A27A2B264EA953F179F66EC4986803325074",
-  "changelog": "Securite donnees: protection pgdata contre suppression accidentelle (initPostgres + ensureAutoPostgres). Fix pg_hba.conf: ::1/128 au lieu de ::1 (corruption PostgreSQL). Fix pg.log: ecriture dans %TEMP% (antivirus). Fix build EPERM Turbopack. MustChangePassword porte dans switch-entite + /api/auth/check. Setup-network-server: nettoyage doublons + 2e passe BOM. Schema Prisma inclus dans le build electron-builder.",
-  "releaseDate": "2026-08-27",
+  "checksum": "61A83E0FEA49F831339AFC982A23A76EBD8D9F124D118D33A862E4DB7987E371",
+  "changelog": "Contact support: email gesticompro@gmail.com, telephone +225 0544814924, sites pacousstar.github.io. Images installer NSIS orange (wizard-side.png + wizard-top.png, vrais PNG 150x57 / 164x314). Fichiers BILAL excludes du build et du git. mustChangePassword fixe dans register route.",
+  "releaseDate": "2026-08-29",
   "required": false
 }
