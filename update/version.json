@@ -1,8 +1,8 @@
 {
-  "version": "3.54.7",
+  "version": "3.54.13",
   "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom.Pro-Setup.exe",
-  "checksum": "61A83E0FEA49F831339AFC982A23A76EBD8D9F124D118D33A862E4DB7987E371",
-  "changelog": "Contact support: email gesticompro@gmail.com, telephone +225 0544814924, sites pacousstar.github.io. Images installer NSIS orange (wizard-side.png + wizard-top.png, vrais PNG 150x57 / 164x314). Fichiers BILAL excludes du build et du git. mustChangePassword fixe dans register route.",
-  "releaseDate": "2026-08-29",
+  "checksum": "CC64A146C622EE7295885A267930CB56EEFAC349CA90AA72BE0ECC5A537CF1E7",
+  "changelog": "Reconstitution de solde (caisse + banque). Suppression modules Bons de commande et Bons de reapprovisionnement. Dependance ESLint et Vitest installees.",
+  "releaseDate": "2026-09-02",
   "required": false
 }
