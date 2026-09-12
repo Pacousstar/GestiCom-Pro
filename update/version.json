@@ -1,8 +1,8 @@
 {
-  "version": "3.54.13",
+  "version": "3.55.8",
   "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom.Pro-Setup.exe",
-  "checksum": "CC64A146C622EE7295885A267930CB56EEFAC349CA90AA72BE0ECC5A537CF1E7",
-  "changelog": "Reconstitution de solde (caisse + banque). Suppression modules Bons de commande et Bons de reapprovisionnement. Dependance ESLint et Vitest installees.",
-  "releaseDate": "2026-09-02",
+  "checksum": "FBA172BBEB1C311AC4F6BBF9D4AB8A4CD08BB1CBD017968B9497143C0745B6F2",
+  "changelog": "Audit complet pre-build. Workspace Stock. Persistance modes. Camera fix. Securite restauration DB. Calculatrice. Comptes courants Workspace. Licence non-bloquante.",
+  "releaseDate": "2026-09-12",
   "required": false
 }
