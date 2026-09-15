@@ -1,8 +1,8 @@
 {
-  "version": "3.55.8",
+  "version": "3.55.10",
   "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom.Pro-Setup.exe",
-  "checksum": "FBA172BBEB1C311AC4F6BBF9D4AB8A4CD08BB1CBD017968B9497143C0745B6F2",
-  "changelog": "Audit complet pre-build. Workspace Stock. Persistance modes. Camera fix. Securite restauration DB. Calculatrice. Comptes courants Workspace. Licence non-bloquante.",
-  "releaseDate": "2026-09-12",
+  "checksum": "116BC878DDC07F1DF4D3478F4211A8238210D8830BECD325CF634A94786F5D57",
+  "changelog": "Correction CREDIT compte courant client/fournisseur. Correction Prisma premiere installation (--accept-data-loss). Stabilite.",
+  "releaseDate": "2026-09-15",
   "required": false
 }
