@@ -1,8 +1,8 @@
 {
-  "version": "3.55.10",
+  "version": "3.55.13",
   "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom.Pro-Setup.exe",
-  "checksum": "116BC878DDC07F1DF4D3478F4211A8238210D8830BECD325CF634A94786F5D57",
-  "changelog": "Correction CREDIT compte courant client/fournisseur. Correction Prisma premiere installation (--accept-data-loss). Stabilite.",
-  "releaseDate": "2026-09-15",
+  "checksum": "DBB19314722F81DEB80BFEFEB8D71B90328F292AC332CCE76DF459E178ED95E1",
+  "changelog": "Correction seed admin : mustChangePassword=false pour nouvelles installations. Correction scripts non packagés. Stabilite.",
+  "releaseDate": "2026-09-16",
   "required": false
 }
