@@ -1,8 +1,8 @@
 {
-  "version": "3.55.14",
+  "version": "3.55.15",
   "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom.Pro-Setup.exe",
-  "checksum": "792D3B8C68A0FFF4A640F64B5F088C7403FC980902476BCD95EC524BD77A94AD",
-  "changelog": "Correction auto-update : installeur NSIS détaché. Stabilite.",
+  "checksum": "2FE19E7C31BC38D47C0BA8C8636655845EEA722F773DFB7A6D4A4E61C5588902",
+  "changelog": "Correction timeout PostgreSQL : le demarrage apres arret brutal prend plus de temps. Stabilite.",
   "releaseDate": "2026-09-17",
   "required": false
 }
