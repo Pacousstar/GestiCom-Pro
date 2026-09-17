@@ -1,8 +1,8 @@
 {
-  "version": "3.55.13",
+  "version": "3.55.14",
   "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom.Pro-Setup.exe",
-  "checksum": "DBB19314722F81DEB80BFEFEB8D71B90328F292AC332CCE76DF459E178ED95E1",
-  "changelog": "Correction seed admin : mustChangePassword=false pour nouvelles installations. Correction scripts non packagés. Stabilite.",
-  "releaseDate": "2026-09-16",
+  "checksum": "792D3B8C68A0FFF4A640F64B5F088C7403FC980902476BCD95EC524BD77A94AD",
+  "changelog": "Correction auto-update : installeur NSIS détaché. Stabilite.",
+  "releaseDate": "2026-09-17",
   "required": false
 }
