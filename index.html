@@ -4,8 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GestiCom Pro — Logiciel de Gestion de Commerce</title>
-<meta name="description" content="GestiCom Pro : gérez vos ventes, achats, stocks et comptabilité en toute simplicité. Téléchargez la dernière version.">
+<meta name="description" content="GestiCom Pro : gérez vos ventes, achats, stocks et comptabilité en toute simplicité. Téléchargez la dernière version gratuitement.">
+<meta property="og:title" content="GestiCom Pro — Téléchargez le Logiciel de Gestion de Commerce">
+<meta property="og:description" content="Téléchargez GestiCom Pro gratuitement. Gérez ventes, achats, stocks, comptabilité et caisse. Simple, puissant, 100% local. Essayez dès maintenant.">
+<meta property="og:image" content="https://pacousstar.github.io/GestiCom-Pro/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://pacousstar.github.io/GestiCom-Pro/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GestiCom Pro — Téléchargez le Logiciel de Gestion de Commerce">
+<meta name="twitter:description" content="Téléchargez GestiCom Pro gratuitement. Gérez ventes, stocks, comptabilité et caisse.">
+<meta name="twitter:image" content="https://pacousstar.github.io/GestiCom-Pro/images/og-image.jpg">
 <link rel="icon" href="images/icon.png">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+<meta name="robots" content="index, follow">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -223,9 +237,9 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
         <a href="#features" class="btn-secondary">En savoir plus</a>
       </div>
       <div class="hero-stats">
-        <div><strong>3.46.9</strong><span>Version</span></div>
+<div><strong>3.55.15</strong><span>Version</span></div>
         <div><strong>100%</strong><span>Local</span></div>
-        <div><strong>1</strong><span>Solution</span></div>
+        <div><strong id="hero-dl">111</strong><span>T&eacute;l&eacute;chargements</span></div>
       </div>
     </div>
     <div class="hero-right-col">
@@ -330,7 +344,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
     <button class="modal-close" onclick="closeModal()">&times;</button>
     <h2>Prêt à passer à <span>GestiCom Pro ?</span></h2>
     <p>Laissez-nous vos coordonnées pour recevoir votre lien de téléchargement et un accompagnement personnalisé.</p>
-    <form id="modalForm" action="https://formspree.io/f/mjgnrgby" method="POST">
+    <form id="modalForm">
       <input type="hidden" name="source" value="preinscription">
       <div class="form-row">
         <div class="form-group">
@@ -380,7 +394,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
   <div class="download-inner">
     <div class="download-preview">
       <img src="images/logo.png" alt="GestiCom Pro" class="download-logo">
-      <h3>GestiCom Pro <span>v3.47.17</span></h3>
+        <h3>GestiCom Pro <span>v3.55.15</span></h3>
       <div class="download-preview-list">
         <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Ventes & Achats</span>
         <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Stocks & Inventaire</span>
@@ -394,12 +408,12 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f293
       <p>Téléchargez la dernière version et commencez dès maintenant.</p>
       <a href="#" onclick="openModal();return false" class="btn-download-lg">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Télécharger (700 Mo)
+        Télécharger (570 Mo)
       </a>
-      <div class="version-info">Windows 10/11 · Installation simple · Essai gratuit · <span id="dl-count">—</span> téléchargements</div>
+      <div class="version-info">Installation simple · Essai gratuit · <span id="dl-count">111</span>+ téléchargements</div>
       <div class="download-notice">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-        L'avertissement Google Drive est normal pour un fichier de 653 Mo. GestiCom Pro est un logiciel sécurisé édité par GSN EXPERTISES GROUP.
+        GestiCom Pro est un logiciel sécurisé édité par GSN EXPERTISES GROUP. Téléchargement direct depuis GitHub Releases.
       </div>
     </div>
   </div>
@@ -460,7 +474,8 @@ Une question, un besoin, un partenariat ? Notre équipe est à votre écoute."><
       <br>
       <a href="tel:+2250544814924">+225 05 44 81 49 24</a> / <a href="tel:+2250707801817">07 07 80 18 17</a>
       <br>
-      &copy; 2026 GSN EXPERTISES GROUP. Tous droits réservés.
+      &copy; 2026 GSN EXPERTISES GROUP. Tous droits r&eacute;serv&eacute;s.<br>
+      <a href="mentions-legales.html" style="color:#f97316;font-size:12px">Mentions l&eacute;gales</a>
     </div>
   </div>
 </footer>
@@ -473,10 +488,9 @@ document.getElementById('downloadModal').addEventListener('click',function(e){if
 
 (function(){function setupAutre(selId,autreId){var s=document.getElementById(selId),a=document.getElementById(autreId);if(!s||!a)return;s.addEventListener('change',function(){a.style.display=s.value==='Autre'?'block':'none';if(s.value!=='Autre')a.value=''});a.addEventListener('input',function(){var o=Array.from(s.options).find(function(x){return x.value==='Autre'});if(o)o.value=a.value})}
 setupAutre('modalDomaine','modalDomaineAutre');
-function handleForm(fid,btnSel,succId,btnHtml,onSuccess){var f=document.getElementById(fid),s=document.getElementById(succId),b=f.querySelector(btnSel);if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();b.disabled=true;b.innerHTML='<svg class="spin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" stroke-dasharray="80" stroke-dashoffset="60"/></svg> Envoi...';fetch(f.action||'https://formspree.io/f/mjgnrgby',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(function(r){return r.json().catch(function(){return{}})}).then(function(d){if(d.error||d.errors)throw new Error(d.error||(d.errors&&d.errors[0]&&d.errors[0].message)||'Erreur inconnue');f.reset();if(onSuccess)onSuccess();else{s.style.display='flex';setTimeout(function(){s.style.display='none'},6000)}}).catch(function(err){alert('Erreur : '+err.message)}).finally(function(){b.disabled=false;b.innerHTML=btnHtml})})}
-handleForm('contactForm','.btn-submit','contactSuccess','<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Envoyer le message');
-handleForm('modalForm','.btn-submit-full','', 'Obtenir mon lien de téléchargement', function(){window.location.href='https://drive.google.com/uc?export=download&id=1BvtgS8l9AyEBItZHcFBWIRnGnFZswISx'});
-fetch('https://api.github.com/repos/Pacousstar/gesticom-pro-master/releases').then(function(r){return r.json()}).then(function(d){var t=d.reduce(function(s,rel){return s+(rel.assets||[]).reduce(function(a,as){return a+as.download_count},0)},0);document.getElementById('dl-count').textContent=t.toLocaleString('fr-FR')}).catch(function(){document.getElementById('dl-count').textContent='—'});
+(function(){var f=document.getElementById('contactForm'),s=document.getElementById('contactSuccess'),b=f.querySelector('.btn-submit'),h=b.innerHTML;f.addEventListener('submit',function(e){e.preventDefault();b.disabled=true;b.innerHTML='<svg class="spin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" stroke-dasharray="80" stroke-dashoffset="60"/></svg> Envoi...';if(!navigator.sendBeacon(f.action,new FormData(f))){b.disabled=false;b.innerHTML=h;alert('Erreur d\'envoi. Veuillez reessayer ou nous contacter par telephone.');return};f.reset();s.style.display='flex';setTimeout(function(){s.style.display='none'},6000);b.disabled=false;b.innerHTML=h})})();
+(function(){var f=document.getElementById('modalForm'),b=f.querySelector('.btn-submit-full');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var nom=document.getElementById('modalNom').value;var email=document.getElementById('modalEmail').value;var tel=document.getElementById('modalTel').value;var domaine=document.getElementById('modalDomaine').value;if(!nom||!email||!domaine){alert('Veuillez remplir tous les champs obligatoires.');return};var p=new URLSearchParams();p.set('nom',nom);p.set('email',email);if(tel)p.set('tel',tel);p.set('domaine',domaine);b.disabled=true;b.textContent='Redirection...';try{sessionStorage.setItem('gesticom_nom',nom);sessionStorage.setItem('gesticom_email',email);if(tel)sessionStorage.setItem('gesticom_tel',tel);sessionStorage.setItem('gesticom_domaine',domaine)}catch(e){};navigator.sendBeacon('https://formspree.io/f/mjgnrgby',new FormData(f));window.location.href='merci.html?'+p.toString()})})();
+function updDl(n){var e1=document.getElementById('dl-count'),e2=document.getElementById('hero-dl');if(e1)e1.textContent=n.toLocaleString('fr-FR');if(e2)e2.textContent=n.toLocaleString('fr-FR')}updDl(111);fetch('downloads.json').then(function(r){return r.json()}).then(function(j){var b=(j&&j.base)?j.base:111;fetch('https://api.github.com/repos/Pacousstar/GestiCom-Pro/releases/latest').then(function(r){return r.json()}).then(function(d){updDl(b+(d.assets||[]).reduce(function(a,as){return a+as.download_count},0))}).catch(function(){updDl(b)})}).catch(function(){})
 })();
 </script>
 
