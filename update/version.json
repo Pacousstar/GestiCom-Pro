@@ -1,0 +1,8 @@
+{
+  "version": "3.55.16",
+  "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom.Pro-Setup.exe",
+  "checksum": "58B393B3744CB0E70893E11F5E0D001155C5522513710B902AB9F543ECD544DB",
+  "changelog": "Protections architecture serveur/client : le client distant ne peut plus modifier le schema PostgreSQL du serveur. Migration SQLite->PG bloquee vers une base non vierge ou un serveur distant.",
+  "releaseDate": "2026-09-21",
+  "required": false
+}
