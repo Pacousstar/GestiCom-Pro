@@ -1,8 +1,8 @@
 {
-  "version": "3.55.16",
+  "version": "3.55.20",
   "downloadUrl": "https://github.com/Pacousstar/GestiCom-Pro/releases/download/production/GestiCom.Pro-Setup.exe",
-  "checksum": "58B393B3744CB0E70893E11F5E0D001155C5522513710B902AB9F543ECD544DB",
-  "changelog": "Protections architecture serveur/client : le client distant ne peut plus modifier le schema PostgreSQL du serveur. Migration SQLite->PG bloquee vers une base non vierge ou un serveur distant.",
-  "releaseDate": "2026-09-21",
+  "checksum": "31F747112F75B70C2CBFB1791EBAFA3FC5D88CAD042D961E448BB29BAC4B47B1",
+  "changelog": "Mobile First : interface adaptée aux petits écrans — aperçus et relevés défilables, Vente Rapide et PrintPreview empilés sur mobile, 15 modales à défilement interne, boutons d'action tactiles, indicateurs KPI en grille 2×2, tables achats défilantes, en-têtes et barres d'outils qui passent à la ligne ; correctif modale RÈGLEMENT Vente Rapide (bouton VALIDER toujours accessible).",
+  "releaseDate": "2026-09-24",
   "required": false
 }
